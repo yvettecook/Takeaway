@@ -41,14 +41,14 @@ Dish | Menu, Line Item
 Menu | Dish, Order
 ------------------------------------------
 
-* display all dishes
-* display all prices
+* add dishes to menu 
+* display all dishes and prices
 
 
 Order | Menu, Line Item, Customer
 ------------------------------------------
 
-* (recieves order from customer)
+* (receives order from customer)
 * pass customer order through Line Items to calculate total for each dish
 * calculate grand total
 * verify order with takeaway
