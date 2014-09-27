@@ -6,4 +6,11 @@ class Order
 		@items = []
 	end
 
+	def add(dish)
+		items << [dish.name, dish.price]
+	end
+
+
+
+
 end
