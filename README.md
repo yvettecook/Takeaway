@@ -59,14 +59,14 @@ Line Item | Dish, Order
 * calculate cost of each item dependent on quantity
 
 
-Takeaway
+Takeaway | Order, Message
 ------------------------------------------
 
 * verify order
 * text confirmation to customer
 
 
-Customer | Order, 
+Customer | Order 
 ------------------------------------------
 
 * provide order choices
