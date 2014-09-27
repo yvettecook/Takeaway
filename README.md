@@ -25,6 +25,7 @@ Aims:
 * Keep classes small, with limited individual responsibilities
 * TDD - refactor after each test passes
 * Create simple first (MVP)
+* Use London Style testing consistently
 
 
 
