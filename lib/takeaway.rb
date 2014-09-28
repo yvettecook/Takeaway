@@ -14,7 +14,13 @@ class Takeaway
 	end
 
 	def comp_message(order)
-		return "Thank you #{order.customer_name}! Your order was placed, and will be delivered in an hour"
+		return "Thank you #{order.customer_name}! Your order was placed, and will be delivered at #{hour_ahead}"
+	end
+
+	def hour_ahead
+		t = Time.now
+		ahead = t + (60 * 60 + 10)
+		ahead.to_s[11..15]
 	end
 
 end

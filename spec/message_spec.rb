@@ -13,6 +13,4 @@ describe 'Message' do
 		expect(message.number).to eq('00000000000')
 	end
 
-	
-	
 end

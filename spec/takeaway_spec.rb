@@ -1,4 +1,5 @@
 require 'takeaway'
+require 'timecop'
 
 describe 'Takeaway' do 
 
@@ -11,13 +12,23 @@ describe 'Takeaway' do
 		expect(lambda {takeaway.verify(order)} ).to raise_error(RuntimeError)
 	end
 
+	before do
+		Timecop.freeze('2014-09-28 20:46:44 +0100')
+	end
+
+	it "should be able to calculate an hour from message time" do
+		expect(takeaway.hour_ahead).to eq('21:46')
+	end
+
 	it "should compose message to customer" do
-		expect(takeaway.comp_message(order)).to eq("Thank you Yvette! Your order was placed, and will be delivered in an hour")
+		expect(takeaway.comp_message(order)).to eq("Thank you Yvette! Your order was placed, and will be delivered at 21:46")
 	end
 
 	# it "should send a message to a customer" do
 	# 	expect(takeaway.send_message(order)).to eq('Message sent')
 	# end
+
+
 
 	
 end
