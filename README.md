@@ -14,11 +14,12 @@ Functionality/Spec:
 Tools Used:
 
 * Ruby 
-* IRB
+* Pry
 * Sublime Text 3
 * RSpec
 * GitHub
 * Twilio API
+* TimeCop gem
 
 Aims:
 
