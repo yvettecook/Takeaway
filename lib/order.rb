@@ -1,10 +1,11 @@
 class Order
 
-	attr_accessor :items, :customer
+	attr_accessor :items, :customer, :grand_total
 
 	def initialize(customer)
 		@items = []
 		@customer = [customer]
+		@grand_total = grand_total
 	end
 
 	def add(dish, quantity)
@@ -20,7 +21,7 @@ class Order
 		totals = items.map do | line |
 			total = get_total(line.to_a)
 		end
-		totals.inject(:+)
+		@grand_total = totals.inject(:+)
 	end
 
 
