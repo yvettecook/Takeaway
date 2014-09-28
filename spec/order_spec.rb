@@ -39,14 +39,4 @@ describe 'Order' do
 		expect(order.grand_total).to eq(16)
 	end
 
-	
-
-	# it "should pass order to takeaway" do
-	# 	order.add(dish1, 4)
-	# 	order.add(dish2, 2)
-	# 	order.pass_to(takeaway)
-	# 	expect(takeaway).to receive()
-	# end
-
-
 end

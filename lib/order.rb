@@ -24,5 +24,4 @@ class Order
 		@grand_total = totals.inject(:+)
 	end
 
-
 end
