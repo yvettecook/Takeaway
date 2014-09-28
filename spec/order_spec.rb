@@ -5,7 +5,7 @@ describe 'Order' do
 	let(:order) { Order.new(customer1)}
 	let(:dish1) { double :dish, :name => 'trifle', :price => 3 }
 	let(:dish2) { double :dish, :name => 'cake' , :price => 2 }
-	let(:customer1) { double :customer }
+	let(:customer1) { double :customer, :name => 'Yvette', :phone => '07989446889' }
 	let(:takeaway) { double :takeaway }
 	
 	it "should contain a list of items ordered" do
@@ -13,7 +13,7 @@ describe 'Order' do
 	end
 
 	it "should have a customer" do
-		expect(order.customer).not_to be nil
+		expect(order.customer_name).not_to be nil
 	end
 
 	it "should be able to add a dish to the order" do

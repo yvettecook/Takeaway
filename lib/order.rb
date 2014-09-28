@@ -1,10 +1,11 @@
 class Order
 
-	attr_accessor :items, :customer, :grand_total
+	attr_accessor :items, :customer_name, :customer_phone, :grand_total
 
 	def initialize(customer)
 		@items = []
-		@customer = [customer]
+		@customer_name = (customer.name)
+		@customer_phone = (customer.phone)
 		@grand_total = grand_total
 	end
 
