@@ -2,9 +2,10 @@ require 'order'
 
 describe 'Order' do
 
-	let(:order) { Order.new }
+	let(:order) { Order.new('')}
 	let(:dish1) { double :dish, :name => 'trifle', :price => 3 }
 	let(:dish2) { double :dish, :name => 'cake' , :price => 2 }
+	let(:customer1) { double :customer }
 	
 	it "should contain a list of items ordered" do
 		expect(order.items).not_to be nil
@@ -26,5 +27,8 @@ describe 'Order' do
 		expect(order.get_grand_total).to eq(16)
 	end
 
+	it "should have a customer" do
+		expect(order.customer).not_to be nil
+	end
 
 end

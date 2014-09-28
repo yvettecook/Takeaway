@@ -1,9 +1,10 @@
 class Order
 
-	attr_accessor :items
+	attr_accessor :items, :customer
 
-	def initialize
+	def initialize(customer)
 		@items = []
+		@customer = [customer]
 	end
 
 	def add(dish, quantity)
