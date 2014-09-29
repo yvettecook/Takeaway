@@ -1,0 +1,10 @@
+## Suggestions for further refactoring:
+  - Menu: why not add instances of dishes directly instead of adding the dish names and prices separately (DNRY)?
+  - Order: likewise, could be shorter to link to a customer rather than setting customer name and phone as separate attributes
+    + instead of adding dish name, price and quantity separately to create an order, why not use instances of line items?
+    Then, the order's grand total could be calculated more directly, as the sum of each line item total, instead of having to create the method get_total?
+  
+## Other comments:
+  - Customer's CRC card says it has an address, but there is no address in the code
+  - Line item: has no information about the dish itself, only price and quantity. 
+  Price being an attribute of dish, why not use dish and quantity as attributes of Line item?
