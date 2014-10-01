@@ -1,6 +1,6 @@
 A programme to manage takeaway orders from customers, and text them confirmation of their order.
 
-Functionality/Spec:
+###Functionality/Spec:
 
 * List of dishes with prices
 * Customers can place orders
@@ -11,16 +11,17 @@ Functionality/Spec:
 * Once an order is placed, the customer will be sent a text message confirmation
 
 
-Tools Used:
+###Tools Used:
 
 * Ruby 
-* IRB
+* Pry
 * Sublime Text 3
 * RSpec
 * GitHub
 * Twilio API
+* TimeCop gem
 
-Aims:
+###Personal Aims:
 
 * Keep classes small, with limited individual responsibilities
 * TDD - refactor after each test passes
