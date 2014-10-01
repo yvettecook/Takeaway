@@ -18,7 +18,12 @@ describe 'Order' do
 
 	it "should be able to add a dish to the order" do
 		order.add(dish1, 4)
-		expect(order.items).to include(['trifle', 3, 4])
+		expect(order.items.first.name).to eq 'trifle'
+	end
+
+	it "should be able to add a dish to the order" do
+		order.add(dish1, 4)
+		expect(order.items.first.quantity).to eq 4
 	end
 
 	it "should be able to get a line item total" do
