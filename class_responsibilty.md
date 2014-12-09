@@ -10,7 +10,7 @@ Dish | Menu, Line Item
 Menu | Dish, Order
 ------------------------------------------
 
-- [x] add dishes to menu 
+- [x] add dishes to menu
 - [x] display all dishes and prices
 
 
@@ -34,10 +34,10 @@ Takeaway | Order, Message
 ------------------------------------------
 
 - [x] verify order
-- [ ] text confirmation to customer
+- [x] text confirmation to customer
 
 
-Customer | Order 
+Customer | Order
 ------------------------------------------
 
 - [x] provide name, address, phone number
@@ -46,5 +46,5 @@ Customer | Order
 Message | Order, Customer
 ------------------------------------------
 
-- [ ] include customer and order details
-- [ ] communicate with Twilio
+- [x] include customer and order details
+- [x] communicate with Twilio

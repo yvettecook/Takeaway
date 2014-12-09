@@ -1,3 +1,5 @@
+[![Code Climate](https://codeclimate.com/github/yvettecook/Takeaway/badges/gpa.svg)](https://codeclimate.com/github/yvettecook/Takeaway)
+
 A programme to manage takeaway orders from customers, and text them confirmation of their order.
 
 ###Functionality/Spec:
@@ -13,7 +15,7 @@ A programme to manage takeaway orders from customers, and text them confirmation
 
 ###Tools Used:
 
-* Ruby 
+* Ruby
 * Pry
 * Sublime Text 3
 * RSpec
@@ -27,6 +29,3 @@ A programme to manage takeaway orders from customers, and text them confirmation
 * TDD - refactor after each test passes
 * Create simple first (MVP)
 * Use London Style testing consistently
-
-
-
