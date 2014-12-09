@@ -1,7 +1,7 @@
 require 'takeaway'
 require 'timecop'
 
-describe 'Takeaway' do 
+describe 'Takeaway' do
 
 	let(:takeaway) { Takeaway.new }
 	let(:order) { double :order, :grand_total => 101, :customer_name => 'Yvette', :customer_phone => number }
@@ -24,11 +24,4 @@ describe 'Takeaway' do
 		expect(takeaway.comp_message(order)).to eq("Thank you Yvette! Your order was placed, and will be delivered at 21:46")
 	end
 
-	# it "should send a message to a customer" do
-	# 	expect(takeaway.send_message(order)).to eq('Message sent')
-	# end
-
-
-
-	
 end

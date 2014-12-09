@@ -7,13 +7,13 @@ class Takeaway
 
 
 	def send_message(order)
-		body = comp_message(order)
+		body = complete_message(order)
 		message = Message.new(body, order.customer_phone)
-		message.send	
+		message.send
 		'Message sent' if message.send
 	end
 
-	def comp_message(order)
+	def complete_message(order)
 		return "Thank you #{order.customer_name}! Your order was placed, and will be delivered at #{hour_ahead}"
 	end
 
@@ -22,8 +22,5 @@ class Takeaway
 		ahead = t + (60 * 60 + 10)
 		ahead.to_s[11..15]
 	end
-
-	# strftime("%H : %M")
-	# Time.now.strftime("%H:%M on the %d %b")
 
 end
